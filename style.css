@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Bellefair&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, p {
+    text-decoration: none;
+    color:black;
+    font-size: 1.1em;
+    font-weight:200; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+}
+.nav-top, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-top {
+    justify-content: space-between;
+    width:100%;
+    height:100%;
+    box-shadow: 0px -5px 10px 6px rgba(0, 0, 0, 0.4);
+    z-index:1;
+    background-color: white;
+    padding:20px;
+    flex-wrap: wrap;
+    padding: 15px 10vw;
+    
+}
+.nav-right {
+    gap:30px;
+    flex-shrink:0;
+    white-space: nowrap;
+}
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: black;
+}
+.nav-right a {
+    padding:2px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn a {
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    border: 2px solid #07A3B2;
+    padding:15px 12px;
+    border-radius:10px;
+}
+.vl {
+    border-left: 0px solid rgb(0, 0, 0);
+}
+
+.vl.top {
+    height:30px;
+}
+
+span {
+    color:#07A3B2;
+}
+
+.intro-section, .intro-section > div {
+    display: flex;
+    align-items: center;
+    height:auto;
+}
+.intro-section {
+    justify-content: space-between;
+    width:100%;
+    padding: 15px 15vw;
+    flex-wrap: wrap;
+}
+.intro-left {
+    justify-content: center;
+    flex-direction: column;
+}
+p.title{
+    font-size:4em;
+    white-space: nowrap;
+
+}
