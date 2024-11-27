@@ -26,7 +26,7 @@ a, p {
     align-items: center;
     gap:70px;
 }
-.nav-top, .nav-right {
+.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section {
     display: flex;
     align-items: center;
 }
@@ -67,7 +67,6 @@ a:hover {
     color:rgb(0, 0, 0);
     border: 2px solid #07A3B2;
     padding:15px 12px;
-    border-radius:10px;
 }
 .vl {
     border-left: 0px solid rgb(0, 0, 0);
@@ -81,23 +80,40 @@ span {
     color:#07A3B2;
 }
 
-.intro-section, .intro-section > div {
-    display: flex;
-    align-items: center;
-    height:auto;
-}
 .intro-section {
     justify-content: space-between;
     width:100%;
-    padding: 15px 15vw;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding:0 200px;
 }
 .intro-left {
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
 }
 p.title{
     font-size:4em;
     white-space: nowrap;
+}
+p.subtitle {
+    width:700px;
+}
+.intro-buttons {
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width:100%;
+    gap:10px;
+    padding:10px 0px;
+}
+.btn.intro-1 a{
+    background-color:#07A3B2;
+    color: white;
+}
 
+
+.systems-section{
+    background-color: rgb(216, 216, 216);
+    height:200px;
+    width:100%;
 }
