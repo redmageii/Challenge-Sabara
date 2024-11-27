@@ -27,6 +27,7 @@ elem.addEventListener('mouseout', function() {
         elem.style.background='#07A3B2';
         elem.style.border='2px solid #07A3B2';
     }
+
 });
 });
 

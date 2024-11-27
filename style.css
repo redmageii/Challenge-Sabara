@@ -24,11 +24,11 @@ a, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:70px;
 }
-.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section {
+.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-top {
@@ -85,6 +85,11 @@ span {
     width:100%;
     flex-wrap: nowrap;
     padding:0 200px;
+    background-color: #F4F4F4;
+}
+.intro-image {
+    padding-top:70px;
+    padding-bottom:70px;
 }
 .intro-left {
     justify-content: start;
@@ -93,6 +98,8 @@ span {
 p.title{
     font-size:4em;
     white-space: nowrap;
+    line-height: 60px;
+    height:135px;
 }
 p.subtitle {
     width:700px;
@@ -111,9 +118,37 @@ p.subtitle {
     color: white;
 }
 
-
 .systems-section{
-    background-color: rgb(216, 216, 216);
-    height:200px;
+    background-color:#ffffff;
     width:100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.system.title p {
+    font-size: 2.9em;
+    width:800px;
+}
+.system-text {
+    flex-direction: column;
+    justify-content: start;
+    gap:20px;
+}
+.system.subtitle {
+    width:100%;
+}
+.system.subtitle ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:20px;
+}
+.system.subtitle ul > li {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap:10px;
+}
+.system.subtitle ul > li p {
+    width:700px;
+    text-align: justify;
 }
