@@ -48,9 +48,21 @@ a, p {
     flex-shrink:0;
     white-space: nowrap;
 }
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: black;
+}
+.nav-right a {
+    padding:3px;
+}
 .btn {
     border: 2px solid #07A3B2;
     padding:10px;
+}
+.btn a {
+    text-decoration:none;
 }
 .vl {
     border-left: 0px solid rgb(0, 0, 0);
