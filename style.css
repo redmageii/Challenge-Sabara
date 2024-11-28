@@ -6,6 +6,9 @@
     box-sizing: border-box;
     flex-shrink: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: white;
@@ -25,7 +28,7 @@ a, p {
     justify-content: center;
     align-items: center;
 }
-.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div, .info-card, .about-section, .section-1, .section-2, .section-3, .info-card-mask, .about-content, .about-intro, .about-title, .about-subtitle, .about-mvv {
+.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div, .info-card, .about-section, .section-1, .section-2, .section-3, .info-card-mask, .about-content, .about-intro, .about-title, .about-subtitle, .about-mvv, .active, .values-top, .values-top > div, .values-bottom, .values-bottom > div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +128,7 @@ p.subtitle {
     background-color:#ffffff;
     width:100%;
     justify-content: space-between;
-    padding:0px 200px;
+    padding:0px 220px;
 }
 .systems-img {
     padding-top:90px;
@@ -133,7 +136,7 @@ p.subtitle {
 }
 .system.title p {
     font-size: 2.5em;
-    width:800px;
+    width:700px;
     line-height: 50px;
     height:110px;
 }
@@ -158,7 +161,7 @@ p.subtitle {
     gap:10px;
 }
 .system.subtitle ul > li p {
-    width:750px;
+    width:600px;
     text-align: justify;
 }
 .about-section {
@@ -176,23 +179,25 @@ p.subtitle {
     height:300px;
     width:800px;
     background-color: #9FDFE3;
-    border-radius: 15px;
+    border-radius: 0px;
     position: relative;
     bottom:80px;
     z-index:1;
     gap:50px;
     right:20px;
+    box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
   
 .info-card-mask {
     height:100%;
     width:100%;
     background-color: #67C5CA;
-    border-radius: 15px;
+    border-radius: 0px;
     position: absolute;
     gap:50px;
     left:20px;
     bottom:20px;
+    
 }
 
 .info-card-mask > div{
@@ -214,9 +219,9 @@ p.info-title {
     font-size:1.2em;
 }
 hr.hl {
-    border-top: 2px solid #07A3B2;
+    border-top: 1px solid #000000;
     width:80%;
-    margin-bottom:80px;
+
 }
 .about-content {
     align-items: center;
@@ -224,6 +229,8 @@ hr.hl {
     gap:40px;
     flex-direction: column;
     width:100%;
+    height:auto;
+    padding:50px;
 
 }
 
@@ -243,20 +250,81 @@ hr.hl {
     text-align-last:center;
 }
 .about-mvv {
-    height:300px;
     width:100%;
     align-items: start;
-    gap:30px;
 }
-.about-mvv input {
-    padding:20px 50px;
-    border: 2px solid #07A3B2;
-    border-radius:0;
-    font-family: 'Open Sans', sans-serif;
-    color:black;
-    background: none;
-    font-size: 1.1em;
+.btn-mission a, .btn-vision a {
+    border-right: 0;
+}
+.about-mvv a {
+    padding:15px 25px;
+}
+
+.vl {
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+.active .vl {
+    height:300px;
+}
+
+.active.values, .active.vision, .active.mission {
+    opacity:100%; 
+}  
+.active {
+    padding:45px;
+    text-align: center;
+    gap:50px;
+    border-radius: 0px;
+    background-color: #f7f7f7;
+    flex-direction: row;
+    box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.active p{
+    color:#000000;
+    font-size:1.1em;
+    width:400px;
+    text-align: justify;
+    text-align-last:center;
+}
+.values-top, .values-bottom {
+    gap:80px;
+    width:100%;
+    align-items: start;
+}
+
+.values-top > div{
+    flex-direction: column;
+    align-items: start;
+}
+
+p.values-title{
+    font-size:2em;
     font-weight:200;
+    width:100%;
+}
+
+.values-bottom > div{
+    flex-direction: column;
+
+}
+
+p.values-subtitle {
+    width:260px;
+}
+.values {
+    display:none;
+    flex-direction: column;
+}
+.mission {
+    flex-direction: row;
+    display:none;
+}
+.vision {
+    display:none;
+    }
 }
 
 @keyframes bounce {

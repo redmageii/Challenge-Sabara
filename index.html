@@ -77,15 +77,55 @@
                         <p class="about-title"><span>M</span>ISSÃO, <span>V</span>ISÃO E<span> V</span>ALORES</p>
                     </div>
                     <div class="about-subtitle">
-                        <p class="about-subtitle">Levamos nosso propósito a sério. Por isso, todas as nossas ações estão fundamentadas nossa missão, visão e valores, que, em conjunto, entregam a melhor experiência aos nossos clientes.</p>
+                        <p class="about-subtitle">Levamos nosso propósito a sério. Por isso, todas as nossas ações estão fundamentadas em nossa missão, visão e valores, que, em conjunto, entregam a melhor experiência aos nossos clientes.</p>
                     </div>
                 </div>
                 <div class="about-mvv">
-                    <input type="button" value="Missão" class="btn-mission">
-                    <input type="button" value="Visão" class="btn-vision">
-                    <input type="button" value="Valores" class="btn-values">
-
+                    <div class="btn btn-mission"><a href="#mission" onclick="ativarMissao()">Missão</a></div>
+                    <div class="btn btn-vision" ><a href="#vision" onclick="ativarVisao()">Visão</a></div>
+                    <div class="btn btn-values" ><a href="#values" onclick="ativarValores()">Valores</a></div>
                 </div>
+
+                <div class="active values" id="values">
+                    <img src="images/value-art.svg" height="150px">
+                    <hr class="hl">
+                    <div class="values-top">
+                        <div>
+                            <p class="values-title">Humanização</p>
+                            <p class="values-subtitle">Priorizar o bem-estar emocional e físico das crianças e de suas famílias.</p>
+                        </div>
+                        <div>
+                            <p class="values-title">Inovação</p>
+                            <p class="values-subtitle">Aplicar tecnologia de ponta para solucionar desafios hospitalares.</p>
+                        </div>
+                        <div>
+                            <p class="values-title">Segurança</p>
+                            <p class="values-subtitle">Garantir a proteção e confidencialidade dos dados dos pacientes.</p>
+                        </div>
+                    </div>
+                    <div class="values-bottom">
+                        <div>
+                            <p class="values-title">Transparência</p>
+                            <p class="values-subtitle">Fornecer informações claras e em tempo real para os pais e responsáveis.</p>
+                        </div>
+                        <div>
+                            <p class="values-title">Eficiência</p>
+                            <p class="values-subtitle">Otimizar os processos hospitalares para melhorar a experiência de todos os envolvidos.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="active mission" id="mission">
+                    <img src='images/mission-art.svg' height='220px'>
+                    <hr class='vl'> 
+                    <p>Facilitar a comunicação entre hospital e paciente.</p>
+                </div> 
+                <div class="active vision" id="vision">
+                    <img src='images/vision-art.svg' height='220px'> 
+                    <hr class='vl'> 
+                    <p>Tornar-se o sistema de comunicação mais utilizado por hospitais pediátricos, revolucionando o relacionamento entre instituições de saúde e pacientes.</p>
+                </div> 
+
+
             </div>
 
         </div>

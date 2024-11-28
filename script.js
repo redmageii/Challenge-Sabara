@@ -1,10 +1,11 @@
 const demoBttn=document.querySelector('.btn.top a');
 const demoBttn2=document.querySelector('.btn.intro-2 a');
 const introBttn=document.querySelector('.btn.intro-1 a');
-const missionBttn=document.querySelector('.btn-mission');
-const visionBttn=document.querySelector('.btn-vision');
-const valuesBttn=document.querySelector('.btn-values');
-btn_array=[demoBttn, demoBttn2, introBttn, missionBttn, visionBttn, valuesBttn]
+const missionBttn=document.querySelector('.btn-mission a');
+const visionBttn=document.querySelector('.btn-vision a');
+const valuesBttn=document.querySelector('.btn-values a');
+btn_array=[demoBttn, demoBttn2, introBttn]
+mvv_array=[missionBttn, visionBttn, valuesBttn]
 
 btn_array.forEach(elem => {
     elem.addEventListener('mouseover', function() {
@@ -36,6 +37,67 @@ elem.addEventListener('mouseout', function() {
 });
 });
 
+missionBttn.addEventListener('click', function() {
+    missionBttn.style.background='#07A3B2';
+    missionBttn.style.color='white';
+    visionBttn.style.background='none';
+    visionBttn.style.color='black'
+    valuesBttn.style.background='none';
+    valuesBttn.style.color='black'
+});
+
+valuesBttn.addEventListener('click', function() {
+    valuesBttn.style.background='#07A3B2';
+    valuesBttn.style.color='white';
+    visionBttn.style.background='none';
+    visionBttn.style.color='black'
+    missionBttn.style.color='black'
+    missionBttn.style.background='none';
+});
+
+visionBttn.addEventListener('click', function() {
+    visionBttn.style.background='#07A3B2';
+    visionBttn.style.color='white';
+    valuesBttn.style.background='none';
+    valuesBttn.style.color='black'
+    missionBttn.style.color='black'
+    missionBttn.style.background='none';
+});
+
+
+function ativarMissao() {
+    const active=document.querySelector('.active');
+    const valores=document.querySelector('.values');
+    const visao=document.querySelector('.vision');
+    const missao=document.querySelector('.mission');
+    missao.style.display='flex'
+    visao.style.display='none'
+    valores.style.display='none'
+    active.style.opacity='100%'
+}
+
+function ativarVisao() {
+    const active=document.querySelector('.active');
+    const valores=document.querySelector('.values');
+    const visao=document.querySelector('.vision');
+    const missao=document.querySelector('.mission');
+    missao.style.display='none'
+    visao.style.display='flex'
+    valores.style.display='none'
+    active.style.opacity='100%'
+
+}
+
+function ativarValores() {
+    const active=document.querySelector('.active');
+    const valores=document.querySelector('.values');
+    const visao=document.querySelector('.vision');
+    const missao=document.querySelector('.mission');
+    missao.style.display='none'
+    visao.style.display='none'
+    valores.style.display='flex'
+    active.style.opacity='100%'
+}
 window.addEventListener('resize', function() {
     console.log('Window resized to ' + window.innerWidth + 'x' + window.innerHeight);
 });
