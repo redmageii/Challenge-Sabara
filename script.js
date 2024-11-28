@@ -1,7 +1,10 @@
-const demoBttn=document.querySelector('.btn.top a')
-const demoBttn2=document.querySelector('.btn.intro-2 a')
-const introBttn=document.querySelector('.btn.intro-1 a')
-btn_array=[demoBttn, demoBttn2, introBttn]
+const demoBttn=document.querySelector('.btn.top a');
+const demoBttn2=document.querySelector('.btn.intro-2 a');
+const introBttn=document.querySelector('.btn.intro-1 a');
+const missionBttn=document.querySelector('.btn-mission');
+const visionBttn=document.querySelector('.btn-vision');
+const valuesBttn=document.querySelector('.btn-values');
+btn_array=[demoBttn, demoBttn2, introBttn, missionBttn, visionBttn, valuesBttn]
 
 btn_array.forEach(elem => {
     elem.addEventListener('mouseover', function() {
