@@ -71,7 +71,6 @@ function ativarMissao() {
     missao.style.display='flex'
     visao.style.display='none'
     valores.style.display='none'
-    active.style.transition='all 2s'
     active.style.opacity='100%'
 }
 
@@ -83,7 +82,6 @@ function ativarVisao() {
     missao.style.display='none'
     visao.style.display='flex'
     valores.style.display='none'
-    active.style.transition='opacity 2s'
     active.style.opacity='100%'
 
 }
@@ -96,6 +94,5 @@ function ativarValores() {
     missao.style.display='none'
     visao.style.display='none'
     valores.style.display='flex'
-    active.style.transition='all 2s'
     active.style.opacity='100%'
 }

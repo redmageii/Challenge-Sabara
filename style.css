@@ -169,22 +169,24 @@ p.subtitle {
     height:300px;
     width:800px;
     background-color: #9FDFE3;
-    border-radius: 15px;
+    border-radius: 0px;
     position: relative;
     bottom:80px;
     z-index:1;
     gap:50px;
     right:20px;
+    box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .info-card-mask {
     height:100%;
     width:100%;
     background-color: #67C5CA;
-    border-radius: 15px;
+    border-radius: 0px;
     position: absolute;
     gap:50px;
     left:20px;
     bottom:20px;
+    
 }
 
 .info-card-mask > div{
@@ -263,9 +265,11 @@ hr.hl {
     text-align: center;
     gap:50px;
     border-radius: 0px;
-    border: 3px solid #07A3B2;
+    background-color: #f7f7f7;
     flex-direction: row;
+    box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
+
 
 .active p{
     color:#000000;
@@ -279,6 +283,7 @@ hr.hl {
 
 .values-top > div{
     flex-direction: column;
+    align-items: start;
 }
 
 p.values-title{
