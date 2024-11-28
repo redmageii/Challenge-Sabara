@@ -11,6 +11,7 @@ btn_array.forEach(elem => {
         elem.style.transition='all 0.5s';
         elem.style.color='white';
         elem.style.background='#07A3B2';
+        elem.classList.add('bounce'); // Add bounce animation class
         if (elem==introBttn) {
             elem.style.transition='all 0.5s';
             elem.style.color='white';
@@ -23,6 +24,7 @@ elem.addEventListener('mouseout', function() {
     elem.style.transition='all 0.5s';
     elem.style.color='black';
     elem.style.background='none';
+    elem.classList.remove('bounce'); // Remove bounce animation class
 
     if (elem==introBttn) {
         elem.style.transition='all 0.5s';
@@ -34,3 +36,6 @@ elem.addEventListener('mouseout', function() {
 });
 });
 
+window.addEventListener('resize', function() {
+    console.log('Window resized to ' + window.innerWidth + 'x' + window.innerHeight);
+});
