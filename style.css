@@ -68,6 +68,9 @@ a:hover {
     border: 2px solid #07A3B2;
     padding:15px 12px;
 }
+.btn a:hover {
+    animation: bounce 1s;
+}
 .vl {
     border-left: 0px solid rgb(0, 0, 0);
 }
@@ -174,4 +177,16 @@ p.subtitle {
     border-radius: 15px;
     position: relative;
     bottom:50px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
