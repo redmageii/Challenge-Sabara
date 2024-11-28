@@ -273,12 +273,15 @@ hr.hl {
 
 .active p{
     color:#000000;
-    font-size:1em;
+    font-size:1.1em;
     width:400px;
+    text-align: justify;
+    text-align-last:center;
 }
 .values-top, .values-bottom {
-    gap:20px;
+    gap:80px;
     width:100%;
+    align-items: start;
 }
 
 .values-top > div{
@@ -294,12 +297,12 @@ p.values-title{
 
 .values-bottom > div{
     flex-direction: column;
+
 }
 
 p.values-subtitle {
-    width:300px;
+    width:260px;
 }
-
 .values {
     display:none;
     flex-direction: column;
