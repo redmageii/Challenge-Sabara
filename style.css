@@ -358,6 +358,7 @@ p.values-subtitle {
     box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.2);
     padding:40px;
     gap:50px;
+    align-items: start;
 }
 .contact-right {
 }
@@ -406,6 +407,7 @@ p.values-subtitle {
 .contact-left div .subtitle {
     width:500px;
 }
+
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
