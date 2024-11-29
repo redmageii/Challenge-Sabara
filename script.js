@@ -101,3 +101,21 @@ function ativarValores() {
 window.addEventListener('resize', function() {
     console.log('Window resized to ' + window.innerWidth + 'x' + window.innerHeight);
 });
+
+document.getElementById('submit-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const nome = document.getElementById('nome').value.trim();
+    const sobrenome = document.getElementById('sobrenome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const celular = document.getElementById('celular').value.trim();
+    const assunto = document.getElementById('assunto').value;
+    const mensagem = document.getElementById('mensagem').value.trim();
+
+    if (!nome || !sobrenome || !email || !celular || assunto === 'ASSUNTO*' || !mensagem) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+    }
+
+    alert(`Dados enviados:\nNome: ${nome}\nSobrenome: ${sobrenome}\nEmail: ${email}\nCelular: ${celular}\nAssunto: ${assunto}\nMensagem: ${mensagem}`);
+});
