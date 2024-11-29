@@ -46,7 +46,7 @@ O script adiciona interatividade e funcionalidades dinâmicas ao site. Principai
 ## Como Executar o Projeto
 1. Clone este repositório:
    ```bash
-   git clone <URL-do-repositório>
+   git clone https://github.com/math-r1card0/Challenge-Sabara.git
    ```
 2. Abra o arquivo `index.html` em um navegador para visualizar o site.
 
