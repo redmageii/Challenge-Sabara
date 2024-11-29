@@ -22,13 +22,18 @@ a, p {
     font-weight:200; 
 }
 
+::placeholder {
+    color: #A9A9AC
+}
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div, .info-card, .about-section, .section-1, .section-2, .section-3, .info-card-mask, .about-content, .about-intro, .about-title, .about-subtitle, .about-mvv, .active, .values-top, .values-top > div, .values-bottom, .values-bottom > div {
+.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div, .info-card, .about-section, .section-1, .section-2, .section-3, .info-card-mask, .about-content, .about-intro, .about-title, .about-subtitle, .about-mvv, .active, .values-top, .values-top > div, .values-bottom, .values-bottom > div, .contact-section, .contact-left, .contact-right, .forms, .forms > div, .contact-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,15 +102,24 @@ span {
     padding-top:150px;
     padding-bottom:70px;
 }
+.intro-text {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
 .intro-left {
     justify-content: start;
     flex-direction: column;
+    gap:10px;
 }
 p.title{
     font-size:4em;
     white-space: nowrap;
-    line-height: 60px;
-    height:135px;
+}
+.intro-text p.title {
+    line-height: 1;
+    overflow: visible;
+    height:auto;
 }
 p.subtitle {
     width:700px;
@@ -179,7 +193,7 @@ p.subtitle {
     height:300px;
     width:800px;
     background-color: #9FDFE3;
-    border-radius: 0px;
+    border-radius: 15px;
     position: relative;
     bottom:80px;
     z-index:1;
@@ -192,7 +206,7 @@ p.subtitle {
     height:100%;
     width:100%;
     background-color: #67C5CA;
-    border-radius: 0px;
+    border-radius: 15px;
     position: absolute;
     gap:50px;
     left:20px;
@@ -284,9 +298,9 @@ hr.hl {
 
 .active p{
     color:#000000;
-    font-size:1.1em;
+    font-size:1em;
     width:400px;
-    text-align: justify;
+    text-align: center;
     text-align-last:center;
 }
 .values-top, .values-bottom {
@@ -312,7 +326,7 @@ p.values-title{
 }
 
 p.values-subtitle {
-    width:260px;
+    width:300px;
 }
 .values {
     display:none;
@@ -324,7 +338,73 @@ p.values-subtitle {
 }
 .vision {
     display:none;
-    }
+
+}
+.contact-section {
+    text-align: center;
+    padding:50px;
+    width:100%;
+    gap:150px;
+
+}
+.contact-section p.title {
+    font-size: 2.5em;
+}
+
+.contact-left {
+    flex-direction: column;
+    height:100%;
+    background-color: #ffffff;
+    box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    padding:40px;
+    gap:50px;
+}
+.contact-right {
+}
+.forms {
+    flex-direction: column;
+
+    gap:20px;
+}
+.name-form, .info-form {
+    gap:20px;
+}
+.name-form input, .info-form input {
+    width:250px;
+}
+
+.contact-section input, textarea {
+    height:40px;
+    background: none;
+    outline:none;
+    border: 0px;
+    border-bottom: 2px solid #A9A9AC;
+    font-family: 'Open Sans', sans-serif;    
+}
+.contact-section select {
+    height:40px;
+    background: none;
+    outline:none;
+    border: 0px;
+    border-bottom: 2px solid #A9A9AC;
+    font-family: 'Open Sans', sans-serif;    
+    color: #A9A9AC;
+    width:100%;
+}
+
+.contact-section textarea {
+    width:100%;
+    height:250px;
+    font-size: 0.8em;
+    resize: vertical;
+}
+
+.contact-wrapper {
+    flex-direction: column;
+}
+
+.contact-left div .subtitle {
+    width:500px;
 }
 
 @keyframes bounce {
