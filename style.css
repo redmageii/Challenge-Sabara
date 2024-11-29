@@ -419,3 +419,16 @@ p.values-subtitle {
         transform: translateY(-5px);
     }
 }
+
+/* Initial state for elements to be animated */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Final state for elements when they are in view */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
