@@ -358,6 +358,7 @@ p.values-subtitle {
     box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.2);
     padding:40px;
     gap:50px;
+    align-items: start;
 }
 .contact-right {
 }
