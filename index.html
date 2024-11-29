@@ -71,7 +71,7 @@
                 </div>
             </div>
             <hr class="hl">
-            <div class="about-content">
+            <div class="about-content" id="mvv">
                 <div class="about-intro">
                     <div class="about-title">
                         <p class="about-title"><span>M</span>ISSÃO, <span>V</span>ISÃO E<span> V</span>ALORES</p>
@@ -81,12 +81,12 @@
                     </div>
                 </div>
                 <div class="about-mvv">
-                    <div class="btn btn-mission"><a href="#mission" onclick="ativarMissao()">Missão</a></div>
-                    <div class="btn btn-vision" ><a href="#vision" onclick="ativarVisao()">Visão</a></div>
-                    <div class="btn btn-values" ><a href="#values" onclick="ativarValores()">Valores</a></div>
+                    <div class="btn btn-mission"><a href="#mvv" onclick="ativarMissao()">Missão</a></div>
+                    <div class="btn btn-vision" ><a href="#mvv" onclick="ativarVisao()">Visão</a></div>
+                    <div class="btn btn-values" ><a href="#mvv" onclick="ativarValores()">Valores</a></div>
                 </div>
 
-                <div class="active values" id="values">
+                <div class="active values">
                     <img src="images/value-art.svg" height="150px">
                     <hr class="hl">
                     <div class="values-top">
@@ -124,12 +124,39 @@
                     <hr class='vl'> 
                     <p>Tornar-se o sistema de comunicação mais utilizado por hospitais pediátricos, revolucionando o relacionamento entre instituições de saúde e pacientes.</p>
                 </div> 
-
-
             </div>
-
         </div>
+        <div class="contact-wrapper">
+            <div class="contact-section">
+                <div class="contact-left">
+                    <div>
+                        <p class="title">Entre em contato.</p>
+                        <p class="subtitle">Para solicitar uma demonstração, sanar dúvidas ou realizar orçamentos, preencha os formulários a seguir.</p>
+                    </div>
+                    <div class="forms">
+                        <div class="name-form">
+                            <input type="text" placeholder="NOME*">
+                            <input type="text" placeholder="SOBRENOME*">
+                        </div>
+                        <div class="info-form">
+                            <input type="text" placeholder="EMAIL*">
+                            <input type="text" placeholder="CELULAR*">
+                        </div>
+                        <select name="assunto" id="assunto">
+                            <option id="placeholder">ASSUNTO*</option>
+                            <option value="Dúvida">Dúvida</option>
+                            <option value="Demonstração">Demonstração</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                        <textarea name="mensagem" id="mensagem" placeholder="MENSAGEM*"></textarea>
+                    </div>
 
+                </div>   
+                <div class="contact-right">
+                    <img src="images/isometric-art.png" height="650px">
+                </div> 
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
