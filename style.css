@@ -337,12 +337,14 @@ p.values-subtitle {
     display:none;
 
 }
+.contact-wrapper {
+    overflow:hidden;
+}
 .contact-section {
     text-align: center;
     padding:5rem;
     width:100%;
     gap:10rem;
-
 }
 .contact-section p.title {
     font-size: 2.5rem;
@@ -397,6 +399,7 @@ p.values-subtitle {
     resize: vertical;
 }
 #submit-btn {
+    color:white;
     background:#07A3B2;
     border: 2px solid #07A3B2;
     padding:1rem 2rem;
