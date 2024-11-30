@@ -13,7 +13,7 @@ btn_array.forEach(elem => {
         elem.style.transition='all 0.5s';
         elem.style.color='white';
         elem.style.background='#07A3B2';
-        if (elem==introBttn) {
+        if (elem==introBttn || elem==sendBttn) {
             elem.style.transition='all 0.5s';
             elem.style.color='white';
             elem.style.background='#045E66';
@@ -26,7 +26,7 @@ elem.addEventListener('mouseout', function() {
     elem.style.color='black';
     elem.style.background='none';
 
-    if (elem==introBttn) {
+    if (elem==introBttn || elem==sendBttn) {
         elem.style.transition='all 0.5s';
         elem.style.color='white';
         elem.style.background='#07A3B2';

@@ -397,7 +397,7 @@ p.values-subtitle {
     resize: vertical;
 }
 #submit-btn {
-    background:none;
+    background:#07A3B2;
     border: 2px solid #07A3B2;
     padding:1rem 2rem;
     font-weight: 200;
