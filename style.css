@@ -33,7 +33,7 @@ a, p {
     justify-content: center;
     align-items: center;
 }
-.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div, .info-card, .about-section, .section-1, .section-2, .section-3, .info-card-mask, .about-content, .about-intro, .about-title, .about-subtitle, .about-mvv, .active, .values-top, .values-top > div, .values-bottom, .values-bottom > div, .contact-section, .contact-left, .contact-right, .forms, .forms > div, .contact-wrapper, .form-title, .send-btn, .send-btn > div, .problem-section, .problems, .solution, .problems > div, .solution > div, .subscription-img, .subscription-input, footer {
+.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div, .info-card, .about-section, .section-1, .section-2, .section-3, .info-card-mask, .about-content, .about-intro, .about-title, .about-subtitle, .about-mvv, .active, .values-top, .values-top > div, .values-bottom, .values-bottom > div, .contact-section, .contact-left, .contact-right, .forms, .forms > div, .contact-wrapper, .form-title, .send-btn, .send-btn > div, .problem-section, .problems, .solution, .problems > div, .solution > div, .subscription-img, .subscription-input, footer, .nav-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -497,7 +497,10 @@ section.subscription-section{
     width:100vw;
     height:300px;
 }
-
+.subscription-img {
+    gap:1rem;
+    flex-direction: column;
+}
 .subscription-img:not(.subscription-img p) {
     width:100%;
     height:100%;
@@ -508,10 +511,6 @@ section.subscription-section{
     background-position-x:50%;
     background-blend-mode: darken;
     }
-.subscription-img {
-    gap:1rem;
-    flex-direction: column;
-}
 .subscription-img p {
     color:white;
     font-size:1.6rem;
@@ -534,9 +533,24 @@ input.subscription-btn {
 }
 
 footer {
-    height:200px;
     width:100%;
     background-color: #ffffff;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:0.3rem;
+}
+footer .hl {
+    color:#07A3B2;
+    width:50%;
+}
+footer > div {
+    padding: 1rem 10vw;
+}
+.nav-footer {
+    gap:1rem;
+}
+footer p {
+    font-size: 1rem;
 }
 
 /* Initial state for elements to be animated */
