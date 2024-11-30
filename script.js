@@ -26,7 +26,8 @@ const introBttn=document.querySelector('.btn.intro-1 a');
 const missionBttn=document.querySelector('.btn-mission a');
 const visionBttn=document.querySelector('.btn-vision a');
 const valuesBttn=document.querySelector('.btn-values a');
-btn_array=[demoBttn, demoBttn2, introBttn]
+const sendBttn=document.querySelector('#submit-btn')
+btn_array=[demoBttn, demoBttn2, introBttn, sendBttn]
 mvv_array=[missionBttn, visionBttn, valuesBttn]
 
 btn_array.forEach(elem => {
@@ -34,8 +35,7 @@ btn_array.forEach(elem => {
         elem.style.transition='all 0.5s';
         elem.style.color='white';
         elem.style.background='#07A3B2';
-        elem.classList.add('bounce'); // Add bounce animation class
-        if (elem==introBttn) {
+        if (elem==introBttn || elem==sendBttn) {
             elem.style.transition='all 0.5s';
             elem.style.color='white';
             elem.style.background='#045E66';
@@ -47,9 +47,8 @@ elem.addEventListener('mouseout', function() {
     elem.style.transition='all 0.5s';
     elem.style.color='black';
     elem.style.background='none';
-    elem.classList.remove('bounce'); // Remove bounce animation class
 
-    if (elem==introBttn) {
+    if (elem==introBttn || elem==sendBttn) {
         elem.style.transition='all 0.5s';
         elem.style.color='white';
         elem.style.background='#07A3B2';
@@ -120,9 +119,6 @@ function ativarValores() {
     valores.style.display='flex'
     active.style.opacity='100%'
 }
-window.addEventListener('resize', function() {
-    console.log('Window resized to ' + window.innerWidth + 'x' + window.innerHeight);
-});
 
 document.getElementById('submit-btn').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default form submission
