@@ -142,7 +142,7 @@ p.subtitle {
     width:100%;
     justify-content: space-between;
     padding:0 17rem;
-    padding-bottom:5rem;
+    padding-bottom:10rem;
 }
 .systems-img {
     padding-top:5rem;
@@ -150,26 +150,26 @@ p.subtitle {
 .problem-section {
     flex-direction: column;
     padding-top:5rem;
-    padding-bottom:10rem;
     background-color: white;
     width:100%;
+    padding-bottom:5rem;
 }
 .problems, .solution {
     gap:2rem;
 }
 .problems {
-    padding-left: 10rem;
+    padding-left: 13rem;
 }
 .solution {
-    padding-right: 10rem;
+    padding-right: 13rem;
 }
- .problems > div{
- flex-direction: column;
- padding:2rem;
- align-items: start;
- gap:1rem;
+.problems > div{
+    flex-direction: column;
+    padding:2rem;
+    align-items: start;
+    gap:1rem;
  }
- .solution > div {
+.solution > div {
     align-items: end;
     flex-direction: column;
     padding:2rem;
@@ -177,7 +177,7 @@ p.subtitle {
  }
 
  .problems > div .title, .solution > div .title {
-    font-size:1.6rem;
+    font-size:1.3rem;
     border-radius: 50px;
     padding:1rem 2rem;
     color:white;
