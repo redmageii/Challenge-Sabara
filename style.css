@@ -33,7 +33,7 @@ a, p {
     justify-content: center;
     align-items: center;
 }
-.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div, .info-card, .about-section, .section-1, .section-2, .section-3, .info-card-mask, .about-content, .about-intro, .about-title, .about-subtitle, .about-mvv, .active, .values-top, .values-top > div, .values-bottom, .values-bottom > div, .contact-section, .contact-left, .contact-right, .forms, .forms > div, .contact-wrapper, .form-title, .send-btn, .send-btn > div{
+.nav-top, .nav-right, .intro-section, .intro-section > div, .systems-section, .systems-section>div, .info-card, .about-section, .section-1, .section-2, .section-3, .info-card-mask, .about-content, .about-intro, .about-title, .about-subtitle, .about-mvv, .active, .values-top, .values-top > div, .values-bottom, .values-bottom > div, .contact-section, .contact-left, .contact-right, .forms, .forms > div, .contact-wrapper, .form-title, .send-btn, .send-btn > div, .problem-section, .problems, .solution, .problems > div, .solution > div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,11 +142,80 @@ p.subtitle {
     width:100%;
     justify-content: space-between;
     padding:0 17rem;
+    padding-bottom:5rem;
 }
 .systems-img {
     padding-top:5rem;
-    padding-bottom:10rem;
 }
+.problem-section {
+    flex-direction: column;
+    padding-top:5rem;
+    padding-bottom:10rem;
+    background-color: white;
+    width:100%;
+}
+.problems, .solution {
+    gap:2rem;
+}
+.problems {
+    padding-left: 10rem;
+}
+.solution {
+    padding-right: 10rem;
+}
+ .problems > div{
+ flex-direction: column;
+ padding:2rem;
+ align-items: start;
+ gap:1rem;
+ }
+ .solution > div {
+    align-items: end;
+    flex-direction: column;
+    padding:2rem;
+    gap:1rem;
+ }
+
+ .problems > div .title, .solution > div .title {
+    font-size:1.6rem;
+    border-radius: 50px;
+    padding:1rem 2rem;
+    color:white;
+    background-color: #07A3B2;
+    width:auto;
+ }
+ 
+.problems {
+    width:100%;
+    justify-content: start;
+}
+.problems p.subtitle, .solution p.subtitle {
+    width: 500px;
+    text-align: justify;
+    text-align-last:left;
+    border-radius: 15px;
+    box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    padding:2rem;
+}
+.solution p.title {
+    background: none;
+    border: 2px solid #07A3B2;
+    color: #07A3B2;
+}
+
+.solution p.subtitle {
+    background-color: #07A3B2;
+    color:white;
+}
+.solution {
+    width:100%;
+    justify-content: end;
+}
+.solution p.subtitle {
+    text-align-last:right;
+}
+
+
 .system.title p {
     font-size: 2.5em;
     width:700px;
