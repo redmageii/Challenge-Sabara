@@ -84,9 +84,6 @@ a:hover {
     border: 2px solid #07A3B2;
     padding:1rem 0.8rem;
 }
-
-
-
 span {
     color:#07A3B2;
 }
@@ -138,7 +135,7 @@ p.subtitle {
 }
 
 .systems-section{
-    background-color:#ffffff;
+    background-color:#F4F4F4;
     width:100%;
     justify-content: space-between;
     padding:0 17rem;
@@ -149,7 +146,6 @@ p.subtitle {
 }
 .problem-section {
     flex-direction: column;
-    padding-top:5rem;
     background-color: white;
     width:100%;
     padding-bottom:5rem;
@@ -162,6 +158,12 @@ p.subtitle {
 }
 .solution {
     padding-right: 13rem;
+}
+.problem-section p.title {
+    font-size: 2.5rem;
+}
+.problem-title  {
+    padding-top: 5rem;
 }
 .problems > div{
     flex-direction: column;
@@ -184,8 +186,9 @@ p.subtitle {
     background-color: #07A3B2;
     width:auto;
  }
- 
+
 .problems {
+    padding-top:5rem;
     width:100%;
     justify-content: start;
 }
@@ -217,7 +220,7 @@ p.subtitle {
 
 
 .system.title p {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     width:700px;
     line-height: 50px;
     height:110px;
@@ -249,7 +252,7 @@ p.subtitle {
 .about-section {
     width:100%;
     height:auto;
-    background-color: #F4F4F4;
+    background-color: #ffffff;
     align-items: normal;
     overflow: visible;
     flex-direction: column;
@@ -414,6 +417,7 @@ p.values-subtitle {
     padding:5rem;
     width:100%;
     gap:10rem;
+    background-color: #F4F4F4;
 }
 .contact-section p.title {
     font-size: 2.5rem;

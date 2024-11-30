@@ -121,7 +121,7 @@ function ativarValores() {
 }
 
 document.getElementById('submit-btn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault();
 
     const nome = document.getElementById('nome').value.trim();
     const sobrenome = document.getElementById('sobrenome').value.trim();
