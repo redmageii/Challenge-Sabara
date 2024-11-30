@@ -19,15 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
 });
-
 const demoBttn=document.querySelector('.btn.top a');
 const demoBttn2=document.querySelector('.btn.intro-2 a');
 const introBttn=document.querySelector('.btn.intro-1 a');
 const missionBttn=document.querySelector('.btn-mission a');
 const visionBttn=document.querySelector('.btn-vision a');
 const valuesBttn=document.querySelector('.btn-values a');
-const sendBttn=document.querySelector('#submit-btn')
-btn_array=[demoBttn, demoBttn2, introBttn, sendBttn]
+const sendBttn=document.querySelector('#submit-btn');
+const subscriptionBttn=document.querySelector('input.subscription-btn')
+btn_array=[demoBttn, demoBttn2, introBttn, sendBttn, subscriptionBttn]
 mvv_array=[missionBttn, visionBttn, valuesBttn]
 
 btn_array.forEach(elem => {
@@ -35,7 +35,7 @@ btn_array.forEach(elem => {
         elem.style.transition='all 0.5s';
         elem.style.color='white';
         elem.style.background='#07A3B2';
-        if (elem==introBttn || elem==sendBttn) {
+        if (elem==introBttn || elem==sendBttn || elem==subscriptionBttn) {
             elem.style.transition='all 0.5s';
             elem.style.color='white';
             elem.style.background='#045E66';
@@ -48,7 +48,7 @@ elem.addEventListener('mouseout', function() {
     elem.style.color='black';
     elem.style.background='none';
 
-    if (elem==introBttn || elem==sendBttn) {
+    if (elem==introBttn || elem==sendBttn || elem==subscriptionBttn) {
         elem.style.transition='all 0.5s';
         elem.style.color='white';
         elem.style.background='#07A3B2';
