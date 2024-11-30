@@ -154,10 +154,10 @@ p.subtitle {
     gap:2rem;
 }
 .problems {
-    padding-left: 13rem;
+    padding-left: 15rem;
 }
 .solution {
-    padding-right: 13rem;
+    padding-right: 15rem;
 }
 .problem-section p.title {
     font-size: 2.5rem;
