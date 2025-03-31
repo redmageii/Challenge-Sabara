@@ -1,8 +1,8 @@
-# MediCode: Software Pediátrico de Passagem Médica
+# Challenge | Web Development | Front-end Design
 Repositório referente ao projeto do Challenge da Faculdade de Informática e Administração Paulista (FIAP), pertencente à grade curricular do curso de Engenharia de Software.
 
 ## Descrição
-O MediCode é uma solução inovadora destinada a hospitais pediátricos, com foco na humanização, segurança e eficiência do atendimento. O sistema utiliza QR codes para facilitar o acesso e a gestão das informações médicas dos pacientes, integrando pais, médicos e administradores por meio de uma interface intuitiva e segura.
+O MediCode: Software Pediátrico de Passagem Médica é uma solução inovadora destinada a hospitais pediátricos, com foco na humanização, segurança e eficiência do atendimento. O sistema utiliza QR codes para facilitar o acesso e a gestão das informações médicas dos pacientes, integrando pais, médicos e administradores por meio de uma interface intuitiva e segura.
 
 
 Tecnologias utilizadas
