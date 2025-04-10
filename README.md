@@ -4,6 +4,7 @@ Repositório referente ao projeto do Challenge da Faculdade de Informática e Ad
 ## Descrição
 O MediCode: Software Pediátrico de Passagem Médica é uma solução inovadora destinada a hospitais pediátricos, com foco na humanização, segurança e eficiência do atendimento. O sistema utiliza QR codes para facilitar o acesso e a gestão das informações médicas dos pacientes, integrando pais, médicos e administradores por meio de uma interface intuitiva e segura.
 
+A página do projeto pode ser visualizada através do link: `https://redmageii.github.io/Challenge-Sabara/`
 
 Tecnologias utilizadas
 
