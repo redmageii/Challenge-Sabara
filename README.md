@@ -6,7 +6,6 @@ O MediCode: Software Pediátrico de Passagem Médica é uma solução inovadora 
 
 A página do projeto pode ser visualizada através do link: <br/> https://redmageii.github.io/Challenge-Sabara/
 
-Tecnologias utilizadas
 
 # Tecnologias utilizadas
 
